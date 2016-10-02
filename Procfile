@@ -1,1 +1,1 @@
-worker: python buszgz.py
+web: python buszgz.py
