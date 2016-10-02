@@ -3,7 +3,8 @@
 
 # buszgz.py
 
-import os import environ
+#import os
+from os import environ
 import telebot
 import suds
 import urllib2
