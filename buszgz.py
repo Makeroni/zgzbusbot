@@ -137,4 +137,4 @@ def echo_all(message):
 
 # bot.polling()
 bot.polling(none_stop=True, interval=0)
-run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
+#run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
