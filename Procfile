@@ -1,1 +1,1 @@
-web: python buszgz.py
+web: python buszgz.py -p $PORT
