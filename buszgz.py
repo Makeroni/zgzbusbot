@@ -30,23 +30,23 @@ bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
 # http://www.dndzgz.com/point?service=bus&id=888
 
 # # url = 'http://www.webservicex.net/globalweather.asmx?WSDL'
-url = 'http://www.dndzgz.com/point?service=bus&id=888'
-response = urllib2.urlopen(url)
-html = response.read()
-html = json.loads(html)
-html = html['items']
-html = json.dumps(html)
-html = html.replace('\u00f3', 'ó')
-html = html.replace(']]', '')
-html = html.replace('[[', '')
-html = html.replace('"], ["', '\n')
-html = html.replace('", "', '; ')
-html = html.replace('"', '')
-html = html.replace('None min', '0 min')
-html = html.replace('[', '')
-html = html.replace(']', ':')
+#url = 'http://www.dndzgz.com/point?service=bus&id=888'
+#response = urllib2.urlopen(url)
+#html = response.read()
+#html = json.loads(html)
+#html = html['items']
+#html = json.dumps(html)
+#html = html.replace('\u00f3', 'ó')
+#html = html.replace(']]', '')
+#html = html.replace('[[', '')
+#html = html.replace('"], ["', '\n')
+#html = html.replace('", "', '; ')
+#html = html.replace('"', '')
+#html = html.replace('None min', '0 min')
+#html = html.replace('[', '')
+#html = html.replace(']', ':')
 # html = BeautifulSoup(response.read().decode('utf-8'))
-print html
+#print html
 
 # \u00e1 -> á
 # \u00e9 -> é
