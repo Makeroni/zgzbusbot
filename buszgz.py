@@ -3,25 +3,12 @@
 
 # buszgz.py
 
-#import os
-#from os import environ
-#from bottle import run, request, post
 import telebot
 import suds
 import urllib2
 import json
 from BeautifulSoup import BeautifulSoup
-#from flask import Flask
 bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
-
-#app = Flask(__name__)
-#if __name__ == '__main__':
-#	# Bind to PORT if defined, otherwise default to 5000.
-#	port = int(os.environ.get('PORT', 5000))
-#	app.run(host='0.0.0.0', port=port)
-
-#def main():
-#	application.listen(environ["PORT"])
 
 #http://www.dndzgz.com/web/api.html
 # http://www.dndzgz.com/fetch?service=###servicio###
@@ -30,23 +17,23 @@ bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
 # http://www.dndzgz.com/point?service=bus&id=888
 
 # # url = 'http://www.webservicex.net/globalweather.asmx?WSDL'
-#url = 'http://www.dndzgz.com/point?service=bus&id=888'
-#response = urllib2.urlopen(url)
-#html = response.read()
-#html = json.loads(html)
-#html = html['items']
-#html = json.dumps(html)
-#html = html.replace('\u00f3', 'ó')
-#html = html.replace(']]', '')
-#html = html.replace('[[', '')
-#html = html.replace('"], ["', '\n')
-#html = html.replace('", "', '; ')
-#html = html.replace('"', '')
-#html = html.replace('None min', '0 min')
-#html = html.replace('[', '')
-#html = html.replace(']', ':')
+url = 'http://www.dndzgz.com/point?service=bus&id=888'
+response = urllib2.urlopen(url)
+html = response.read()
+html = json.loads(html)
+html = html['items']
+html = json.dumps(html)
+html = html.replace('\u00f3', 'ó')
+html = html.replace(']]', '')
+html = html.replace('[[', '')
+html = html.replace('"], ["', '\n')
+html = html.replace('", "', '; ')
+html = html.replace('"', '')
+html = html.replace('None min', '0 min')
+html = html.replace('[', '')
+html = html.replace(']', ':')
 # html = BeautifulSoup(response.read().decode('utf-8'))
-#print html
+print html
 
 # \u00e1 -> á
 # \u00e9 -> é
@@ -137,4 +124,4 @@ def echo_all(message):
 
 # bot.polling()
 bot.polling(none_stop=True, interval=0)
-#run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
+
