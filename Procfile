@@ -1,1 +1,1 @@
-web: python buszgz.py
+bot: python buszgz.py
