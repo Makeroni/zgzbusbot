@@ -12,11 +12,11 @@ from BeautifulSoup import BeautifulSoup
 from flask import Flask
 bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
 
-app = Flask(__name__)
-if __name__ == '__main__':
-	# Bind to PORT if defined, otherwise default to 5000.
-	port = int(os.environ.get('PORT', 5000))
-	app.run(host='0.0.0.0', port=port)
+#app = Flask(__name__)
+#if __name__ == '__main__':
+#	# Bind to PORT if defined, otherwise default to 5000.
+#	port = int(os.environ.get('PORT', 5000))
+#	app.run(host='0.0.0.0', port=port)
 	
 #http://www.dndzgz.com/web/api.html
 # http://www.dndzgz.com/fetch?service=###servicio###
