@@ -5,6 +5,7 @@
 
 #import os
 from os import environ
+from bottle import run, request, post
 import telebot
 import suds
 import urllib2
@@ -19,8 +20,8 @@ bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
 #	port = int(os.environ.get('PORT', 5000))
 #	app.run(host='0.0.0.0', port=port)
 
-def main():
-	application.listen(environ["PORT"])
+#def main():
+#	application.listen(environ["PORT"])
 
 #http://www.dndzgz.com/web/api.html
 # http://www.dndzgz.com/fetch?service=###servicio###
@@ -136,4 +137,4 @@ def echo_all(message):
 
 # bot.polling()
 bot.polling(none_stop=True, interval=0)
-
+run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
