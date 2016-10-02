@@ -1,1 +1,1 @@
-bot: python buszgz.py
+bot: newrelic-admin run-program python buszgz.py
