@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 # coding=utf-8
-if __name__ == '__main__':
-	# Bind to PORT if defined, otherwise default to 5000.
-	port = int(os.environ.get('PORT', 5000))
-	app.run(host='0.0.0.0', port=port)
 
 # buszgz.py
 
+import os
 import telebot
 import suds
 import urllib2
@@ -14,6 +11,11 @@ import json
 from BeautifulSoup import BeautifulSoup
 bot = telebot.TeleBot("287844347:AAHlT-xf3HQxP4mnhTh745bqkqM2ePksH2Y")
 
+if __name__ == '__main__':
+	# Bind to PORT if defined, otherwise default to 5000.
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port)
+	
 #http://www.dndzgz.com/web/api.html
 # http://www.dndzgz.com/fetch?service=###servicio###
 # http://www.dndzgz.com/fetch?service=bus
