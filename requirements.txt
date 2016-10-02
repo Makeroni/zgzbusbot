@@ -3,5 +3,3 @@ suds>=0.1
 ndg-httpsclient>=0.1
 jwt>=0.1
 beautifulsoup>=0.1
-flask>=0.1
-bottle>=0.1
